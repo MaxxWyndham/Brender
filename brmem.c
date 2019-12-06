@@ -4,6 +4,11 @@
 #include <SDL.h>
 #include <stdlib.h>
 
+br_uint_32 gBrIntScratchpadInUse = 0;
+br_uint_32 gBrIntScratchpadRequestedSize = 0;
+br_uint_32 gBrIntScratchpadSize = 0;
+void* gBrIntScratchpad = 0;
+
 void BrBlockFill(void* dest_ptr, int value, int dwords)
 {
 	memset(dest_ptr, value, dwords);

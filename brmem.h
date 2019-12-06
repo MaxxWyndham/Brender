@@ -2,11 +2,6 @@
 
 #ifndef _BRENDER_BRMEM_H_
 
-br_uint_32 gBrIntScratchpadInUse = 0;
-br_uint_32 gBrIntScratchpadRequestedSize = 0;
-br_uint_32 gBrIntScratchpadSize = 0;
-void* gBrIntScratchpad = 0;
-
 enum {
 	BR_MEMORY_SCRATCH,
 	BR_MEMORY_PIXELMAP,
